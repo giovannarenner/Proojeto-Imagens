@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/bege"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtinformacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:text="Charlotte"
+            android:textSize="20dp"
+            android:textColor="@color/brown"/>
+
+        <ImageView
+            android:id="@+id/ImgFoto"
+            android:layout_width="134dp"
+            android:maxWidth="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/gato" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btfoto1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="60dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/marrom"
+        android:padding="10dp"
+        android:text="Exibir foto da Charlotte" />
+
+    <Button
+        android:id="@+id/btfoto2"
+        android:layout_below="@id/btfoto1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Exibir foto da pig"
+        android:backgroundTint ="@color/marrom"/>
+
+</RelativeLayout>
